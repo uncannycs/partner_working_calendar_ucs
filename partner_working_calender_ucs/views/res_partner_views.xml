@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_calendar" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.calendar</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='misc']" position="inside">
+                <field name="resource_calendar_id"/>
+            </xpath>
+            <xpath expr="//field[@name='child_ids']/form//field[@name='company_id']" position="after">
+                <field name="resource_calendar_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_address_form_inherit_calendar" model="ir.ui.view">
+        <field name="name">res.partner.form.address.inherit.calendar</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_address_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/group/group[2]" position="inside">
+                <field name="resource_calendar_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_simple_form_inherit_calendar" model="ir.ui.view">
+        <field name="name">res.partner.simplified.form.inherit.calendar</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_simple_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='phone']" position="after">
+                <field name="resource_calendar_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_tree_inherit_calendar" model="ir.ui.view">
+        <field name="name">res.partner.list.inherit.calendar</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="resource_calendar_id" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter_inherit_calendar" model="ir.ui.view">
+        <field name="name">res.partner.select.inherit.calendar</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="resource_calendar_id"/>
+            </xpath>
+            <xpath expr="//group[@name='group_by']" position="inside">
+                <filter string="Working Calendar" name="group_resource_calendar_id" context="{'group_by': 'resource_calendar_id'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
