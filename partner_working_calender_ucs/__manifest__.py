@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Partner Working Calendar Ucs',
+    'name': "Partner Working Calendar | Customer Working Hours | Vendor Working Days | Partner Business Hours | Schedule Calendar | Partner Availability Calendar",
     'version': '18.0.1.0.0',
     'category': 'Sales',
     'summary': 'Manage working schedules for partners with resource calendar integration.',
@@ -21,7 +21,7 @@ Key Features:
     'website': 'https://uncannycs.com',
     'author': 'Uncanny Consulting Services LLP',
     'maintainer': 'Uncanny Consulting Services LLP',
-    "license": "Other proprietary",
+    "license": 'Other proprietary',
     'depends': ['resource', 'mail', 'contacts'],
     'data': [
         'views/res_partner_views.xml',
