@@ -2234,14 +2234,13 @@
                                             class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
                                             data-bs-target="#collapseOne" data-bs-toggle="collapse"
                                             style="background-color: #f8f9fa">
-                                            1. Is this module compatible with Odoo Community and Enterprise?
+                                            Is Partner Working Calendar compatible with Odoo Community and Enterprise?
                                         </div>
                                     </h2>
                                     <div aria-labelledby="headingOne" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" id="collapseOne">
-                                        <div class="accordion-body text-muted">
-                                            Yes, absolutely! The module is fully compatible with both Odoo Community and
-                                            Odoo Enterprise editions, as well as Odoo.sh environments.
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            Yes, absolutely! The module is fully compatible with both Odoo Community and Odoo Enterprise editions, as well as Odoo.sh cloud hosting environments.
                                         </div>
                                     </div>
                                 </div>
@@ -2253,15 +2252,13 @@
                                             class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
                                             data-bs-target="#collapseTwo" data-bs-toggle="collapse"
                                             style="background-color: #f8f9fa">
-                                            2. Can I assign different working calendars to customers and vendors?
+                                            How does assigning a working calendar to a partner affect logistics and delivery dates?
                                         </div>
                                     </h2>
                                     <div aria-labelledby="headingTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" id="collapseTwo">
-                                        <div class="accordion-body text-muted">
-                                            Yes. You can assign unique working schedules to each customer, vendor, or
-                                            individual delivery address independently using Odoo's native Resource
-                                            Calendar framework.
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            By attaching an Odoo Resource Calendar (`resource.calendar`) to a customer or vendor, delivery scheduling algorithms take operating hours, weekends, and non-working days into account.
                                         </div>
                                     </div>
                                 </div>
@@ -2273,14 +2270,13 @@
                                             class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
                                             data-bs-target="#collapseThree" data-bs-toggle="collapse"
                                             style="background-color: #f8f9fa">
-                                            3. Does this module support holiday and break management?
+                                            Can I assign separate working calendars to distinct delivery addresses under the same parent partner?
                                         </div>
                                     </h2>
                                     <div aria-labelledby="headingThree" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" id="collapseThree">
-                                        <div class="accordion-body text-muted">
-                                            Yes. You can define holiday breaks and shift schedules directly within the
-                                            resource calendar assigned to each partner, delivery address, or contact.
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            Yes! Each child contact or delivery address location (`res.partner`) can have its own dedicated working schedule independently of the main corporate address.
                                         </div>
                                     </div>
                                 </div>
@@ -2292,15 +2288,13 @@
                                             class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
                                             data-bs-target="#collapseFour" data-bs-toggle="collapse"
                                             style="background-color: #f8f9fa">
-                                            4. Will schedule changes be tracked in the chatter?
+                                            How are public holidays, national leaves, and custom working hours managed?
                                         </div>
                                     </h2>
                                     <div aria-labelledby="headingFour" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" id="collapseFour">
-                                        <div class="accordion-body text-muted">
-                                            Yes. Every working calendar assignment or update on a partner record is
-                                            automatically logged in the Odoo chatter, giving you a full audit trail of
-                                            schedule changes.
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            You can configure custom working hours, lunch breaks, shift patterns, and public holiday exceptions within the standard Resource Schedule view.
                                         </div>
                                     </div>
                                 </div>
@@ -2312,15 +2306,13 @@
                                             class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
                                             data-bs-target="#collapseFive" data-bs-toggle="collapse"
                                             style="background-color: #f8f9fa">
-                                            5. Can I filter and group partners by their working calendar?
+                                            Are working calendar changes tracked in the partner chatter for audit compliance?
                                         </div>
                                     </h2>
                                     <div aria-labelledby="headingFive" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" id="collapseFive">
-                                        <div class="accordion-body text-muted">
-                                            Yes. The module adds Search and Group By filters on the partner list view,
-                                            allowing you to quickly segment customers or vendors by their assigned
-                                            working schedule.
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            Yes, every calendar assignment or schedule modification triggers an automated chatter update on the partner form, providing an full audit record.
                                         </div>
                                     </div>
                                 </div>
@@ -2332,15 +2324,13 @@
                                             class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
                                             data-bs-target="#collapseSix" data-bs-toggle="collapse"
                                             style="background-color: #f8f9fa">
-                                            6. Does it work on delivery addresses separately from the main contact?
+                                            Can I filter, search, and group partners based on their assigned working schedules in list view?
                                         </div>
                                     </h2>
                                     <div aria-labelledby="headingSix" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" id="collapseSix">
-                                        <div class="accordion-body text-muted">
-                                            Yes. You can assign a dedicated working calendar to each delivery address
-                                            independently, so different locations for the same partner can have their
-                                            own schedules.
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            Yes! The module enhances the partner list view by introducing dedicated search filters and "Group By: Working Calendar" functionality for logistics planning.
                                         </div>
                                     </div>
                                 </div>
@@ -2352,15 +2342,31 @@
                                             class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
                                             data-bs-target="#collapseSeven" data-bs-toggle="collapse"
                                             style="background-color: #f8f9fa">
-                                            7. Is free support included after purchase?
+                                            How does the working calendar handle multi-company setups in Odoo?
                                         </div>
                                     </h2>
                                     <div aria-labelledby="headingSeven" class="accordion-collapse collapse"
                                         data-bs-parent="#faqAccordion" id="collapseSeven">
-                                        <div class="accordion-body text-muted">
-                                            Yes! Every purchase includes lifetime free support and updates for your Odoo
-                                            version — no subscriptions, no hidden fees. Just email support@uncannycs.com
-                                            anytime.
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            Working schedules are multi-company aware. When operating in a multi-company environment, calendars can be restricted per company or shared globally across entities.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FAQ 8 -->
+                                <div class="accordion-item border-0 mb-3 rounded-4 shadow-sm">
+                                    <h2 class="accordion-header" id="headingEight"
+                                        style="font-family: 'Montserrat', sans-serif">
+                                        <div aria-controls="collapseEight" aria-expanded="false"
+                                            class="accordion-button rounded-4 fw-bold text-dark collapsed cursor-pointer"
+                                            data-bs-target="#collapseEight" data-bs-toggle="collapse"
+                                            style="background-color: #f8f9fa">
+                                            Does the calendar integrate with vendor purchase orders and Lead Time calculations?
+                                        </div>
+                                    </h2>
+                                    <div aria-labelledby="headingEight" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion" id="collapseEight">
+                                        <div class="accordion-body text-muted" style="line-height: 1.7">
+                                            Yes! Vendor working schedules ensure purchase orders and estimated vendor delivery receipts correspond to active vendor operational days rather than non-working holidays.
                                         </div>
                                     </div>
                                 </div>
